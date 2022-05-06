@@ -1,0 +1,59 @@
+//______________________ G R I D S ______________________
+//______________________ G R I D S ______________________
+//______________________ G R I D S ______________________
+@mixin grid ($col, $row) {
+    display: grid;
+    grid-template-columns: $template;
+    grid-template-rows: $row;
+}
+@mixin gridGap ($col, $row, $colgap, $rowgap) {
+    display: grid;
+    grid-template-columns: $template;
+    grid-template-rows: $row;
+    column-gap: $colgap;
+    row-gap: $rowgap;
+}
+
+
+//______________________ F L E X E S ______________________
+//______________________ F L E X E S ______________________
+//______________________ F L E X E S ______________________
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flexWrap ($direction, $align, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+@mixin flexCol ($direction, $align) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flexColWrap ($direction, $align, $wrap) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+//________________ T E X T     S T Y L E_________________
+//________________ T E X T     S T Y L E_________________
+//________________ T E X T     S T Y L E_________________
+@mixin text($align, $lineHeight, $letterSpacing) {
+    text-align: $align;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+@mixin font ($size, $familly, $weight) {
+    font-size: $size;
+    font-family: $familly;
+    font-weight: $weight;
+}
